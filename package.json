@@ -1,0 +1,11 @@
+{
+	"name": "problem",
+	"version": "1",
+	"type": "module",
+	"description": "面经题目",
+	"main": "index.js",
+	"license": "MIT",
+	"dependencies": {
+		"loadsh": "^0.0.4"
+	}
+}
