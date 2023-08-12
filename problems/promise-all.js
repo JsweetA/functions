@@ -36,7 +36,9 @@ const query = (time) => {
 const a = async () => {
 	// const res = await Promise.all([1, 2, 3, 4].map((i) => query(i * 1000)));
 	// console.log("promise.all", res);
-	const res1 = await promiseAll([1, 2, 3, 8].map((i) => query(i * 1000)));
+	const res1 = await promiseAll([3, 2, 3, 8].map((i) => query(i * 1000)));
 	console.log(res1);
 };
-a();
+
+await a();
+Promise.race([3, 2, 3, 8].map((i) => query(i * 1000)));
